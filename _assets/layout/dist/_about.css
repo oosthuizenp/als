@@ -1,0 +1,46 @@
+/* Ensure the background color is applied only to the Text-Block section */
+#about {
+  background-color: #8AC5E2;
+  /* Background color for the Text-Block section only */
+}
+
+/* Set the body text color to black for the entire section */
+#about, #about .about-title, #about .about-subheading, #textaboutblock .text-muted {
+  color: black;
+  /* Black text for the body content */
+}
+
+/* Heading styles for consistency with the "About Us" section */
+#about h6.section-heading {
+  font-size: 4rem !important;
+  /* Same font size as the About Us section */
+  color: #235FA3;
+  /* Title color */
+  text-align: left;
+  /* Left align */
+  text-transform: uppercase;
+  margin-left: 0 !important;
+  /* Remove left margin */
+}
+
+#about .about-subheading {
+  color: black;
+  /* Ensures subheading text is black */
+  text-align: left;
+  /* Left align subheading */
+}
+
+#about .textblock-title {
+  line-height: 2em;
+  text-align: left;
+  /* Left align textblock titles */
+  color: black;
+  /* Black color for the textblock titles */
+}
+
+#about .text-muted {
+  color: black;
+  /* Black color for the muted footer text */
+  text-align: left;
+  /* Left align muted text */
+}

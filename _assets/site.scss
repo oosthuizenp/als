@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+$header-image: "./img/als-hero.jpg";
+$contact-image: "./img/contact.png";
+
+$primary: #235FA3;
+$white: #fff;
+$black: #000;
+$input-height:calc(#{$input-height-inner} + #{$input-height-border});
+
+$spacer:1rem;
+$border-width:3px;
+$border-radius:0;
+$enable-rounded: false;
+$enable-shadows:false;
+$enable-gradients:false;
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap";
+
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/page.scss";
+
+@import "components/buttons.scss";
+@import "components/navbar.scss";
+@import "components/client-scroll.scss";
+
+@import "layout/masthead.scss";
+@import "layout/services.scss";
+@import "layout/portfolio.scss";
+@import "layout/team.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";
+@import "layout/clients.scss";
+@import "layout/textblock.scss";
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', cursive,sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    webkit-tap-highlight-color: $primary;
+}
+
+.post {
+    max-width: 750px;
+    margin-top: 150px;
+}
+
+/* Poppins CSS classes */
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  /* Bebas Neue CSS class */
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+

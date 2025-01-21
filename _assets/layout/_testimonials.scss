@@ -1,0 +1,92 @@
+/* Styling for the testimonials section */
+
+.testimonial-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 999;
+  max-height: 20px;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 25px;
+  position: relative;
+  z-index: 2;
+  text-align: left; /* Left align */
+}
+
+.section-subheading {
+  font-size: 1.25rem;
+  color: #00ACC8;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.testimonial-company {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #fff;
+}
+
+.quote-icon-left, .quote-icon-right {
+  color: #f1c40f; /* Gold color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .section-heading {
+    text-align: left; /* Left align */
+    font-size: 2rem;
+  }
+
+  .section-subheading {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.25rem;
+  }
+}
+
+/* Styling for the testimonial body (background and padding) */
+.testimonials-section .testimonial-body {
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px;
+}

@@ -1,0 +1,33 @@
+baseurl: ""
+
+title      : ALS Apex Leadership Specialists 
+email      : craig@apexcoaching.co.za
+description: Expert leadership coaching, facilitated learning, and strategic people development solutions. Build stronger teams through inspiring stories and global insights.
+author     : Eben Roux / Pieter Oosthuizen
+
+analytics:
+  google: xxx
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+webserver_headers:
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET, OPTIONS, HEAD
+
+logo:
+  path: /assets/als-logo.png
+
+exclude: [node_modules,webpack-config.js,package.json,package-lock.json]
+
+group: Apex Leadership Specialists
+
+company: Apex Leadership Specialists
+
+url: https://www.intellify.co.za
+
+address: Durban North, kwaZulu Natal, South Africa

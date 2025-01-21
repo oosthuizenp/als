@@ -1,0 +1,16 @@
+// Font Mixins
+@mixin serif-font {
+  font-family: 'Poppins', serif;
+}
+
+@mixin script-font {
+  font-family: 'Poppins', serif; /* Or you can specify a script font if desired */
+}
+
+@mixin body-font {
+  font-family: 'Poppins', serif;
+}
+
+@mixin heading-font {
+  font-family: 'Poppins', serif; /* You can omit the fallback for Bebas Neue */
+}

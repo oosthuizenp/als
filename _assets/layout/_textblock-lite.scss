@@ -1,0 +1,118 @@
+/* Styling for the textblock-lite-section */
+.textblock-lite {
+  /* Main container styling */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Header styling */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Grid layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Image styling inside grid */
+  .grid-item.image img {
+    border-radius: 8px;
+  }
+
+  /* Text styling inside grid */
+  .grid-item.text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Button styling */
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Button hover effect */
+  .btn:hover {
+    background-color: #8AC5E2;
+  }
+
+  /* Main section styling */
+  .textblock-lite-section {
+    background-color: #f8f9fa;
+    background-image: url('/_assets/img/hero1.png');
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 60px 20px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+  }
+
+  /* Icon styling */
+  .textblock-lite-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 999;
+    max-height: 20px;
+  }
+
+  /* Section heading styling */
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    padding-left: 25px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+  }
+
+  /* Section subheading styling */
+  .section-subheading {
+    font-size: 1.25rem;
+    color: #00ACC8;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .textblock-lite-section {
+      padding: 40px 20px;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+    }
+
+    .section-subheading {
+      font-size: 1.1rem;
+    }
+
+    /* Body section inside textblock-lite */
+    .textblock-lite-section .textblock-lite-body {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+    }
+  }
+}

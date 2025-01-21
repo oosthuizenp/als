@@ -1,0 +1,49 @@
+<!-- Text-Block -->
+<section class="page-section" id="{{ site.data.sitetext.textblock.section | default: 'textblock' }}" style="background-color: #8AC5E2;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- MAIN TITLE -->
+        <h6 class="section-heading text-uppercase" style="font-size: 4rem; color: white; text-align: left; text-transform: uppercase; margin-left: 0;">
+          {{ site.data.sitetext.textblock.title | default: 'Text Text-Block' }}
+        </h6>
+        <!-- BULLET HEADINGS -->
+        {% if site.data.sitetext.textblock.text %}
+        <h3 class="textblock-subheading text-muted" style="color: black; text-align: left;">
+          {{ site.data.sitetext.textblock.text }}
+        </h3>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-12">
+        <div class="container textblock-heading" style="text-align: left; color: black;">
+          {% for textblock in site.data.sitetext.textblock.list %}
+          <div class="row">
+            {% if textblock.image %}
+            <div class="textblock-image col-1 p-1 text-center">
+              <i class="fas {{textblock.image}} fa-1x"></i>
+            </div>
+            {% endif %}
+            <div class="textblock-title col align-items-center" style="text-align: left; color: black;">
+              <strong>{{ textblock.title }}</strong>
+              {% if textblock.description %}
+                <p>{{ textblock.description }}</p>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% if site.data.sitetext.textblock.footer %}
+        <div class="text-muted text-center w-100" style="color: black;">
+          {{ site.data.sitetext.textblock.footer | markdownify }}
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Text-Block -->
