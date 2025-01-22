@@ -64,7 +64,7 @@ section {
 @media screen and (max-width: 640px) {
   h1,
   h2 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   h3 {
@@ -77,7 +77,7 @@ section {
 @media screen and (min-width: 641px) and (max-width: 1024px) {
   h1,
   h2 {
-    font-size: 30px; // Increased font size for golden ratio
+    font-size: 50px; // Increased font size for golden ratio
   }
 
   h3 {
@@ -90,7 +90,7 @@ section {
 @media screen and (min-width: 1025px) {
   h1,
   h2 {
-    font-size: 36px; // Increased font size for golden ratio
+    font-size: 70px; // Increased font size for golden ratio
   }
 
   h3 {

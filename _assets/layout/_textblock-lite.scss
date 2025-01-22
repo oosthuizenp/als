@@ -1,11 +1,13 @@
-/* Styling for the textblock-lite-section */
-.textblock-lite {
-  /* Main container styling */
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Main section styling */
+.textblock-lite-section {
+  background-color: #f8f9fa;
+  background-image: url('/_assets/img/hero1.png');
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 60px 20px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
 
   /* Header styling */
   .header {
@@ -16,21 +18,33 @@
   /* Grid layout */
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: center;
-  }
 
-  /* Image styling inside grid */
-  .grid-item.image img {
-    border-radius: 8px;
-  }
+    .grid-item {
+      &.image {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+      }
 
-  /* Text styling inside grid */
-  .grid-item.text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+      &.text {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        p, ul {
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+      }
+    }
   }
 
   /* Button styling */
@@ -46,23 +60,10 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
 
-  /* Button hover effect */
-  .btn:hover {
-    background-color: #8AC5E2;
-  }
-
-  /* Main section styling */
-  .textblock-lite-section {
-    background-color: #f8f9fa;
-    background-image: url('/_assets/img/hero1.png');
-    background-repeat: repeat;
-    background-position: center center;
-    padding: 60px 20px;
-    margin: 0 auto;
-    position: relative;
-    max-width: 1200px;
+    &:hover {
+      background-color: #8AC5E2;
+    }
   }
 
   /* Icon styling */
@@ -95,10 +96,14 @@
   }
 
   /* Responsive Styles */
-  @media (max-width: 768px) {
-    .textblock-lite-section {
-      padding: 40px 20px;
+  @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: 1fr; // Stacks the columns on smaller screens
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
 
     .section-heading {
       font-size: 2rem;
@@ -109,7 +114,7 @@
     }
 
     /* Body section inside textblock-lite */
-    .textblock-lite-section .textblock-lite-body {
+    .textblock-lite-body {
       background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       border-radius: 8px;

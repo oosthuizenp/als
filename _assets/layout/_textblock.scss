@@ -1,34 +1,59 @@
-/* Ensure the background color is applied only to the Text-Block section */
-#textblock {
-  background-color: #8AC5E2; /* Background color for the Text-Block section only */
-}
+.textblock-section {
+  background-color: #8AC5E2;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
-/* Set the body text color to black for the entire section */
-#textblock, #textblock .textblock-title, #textblock .textblock-subheading, #textblock .text-muted {
-  color: black; /* Black text for the body content */
-}
+  .section-heading {
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 0;
+  }
 
-/* Heading styles for consistency with the "About Us" section */
-#textblock h6.section-heading {
-  font-size: 4rem !important; /* Same font size as the About Us section */
-  color: #235FA3; /* Title color */
-  text-align: left; /* Left align */
-  text-transform: uppercase;
-  margin-left: 0 !important; /* Remove left margin */
-}
+  .textblock .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-#textblock .textblock-subheading {
-  color: black; /* Ensures subheading text is black */
-  text-align: left; /* Left align subheading */
-}
+  .textblock-subheading {
+    color: black;
+    text-align: left;
+  }
 
-#textblock .textblock-title {
-  line-height: 2em;
-  text-align: left; /* Left align textblock titles */
-  color: black; /* Black color for the textblock titles */
-}
+  .textblock-heading {
+    text-align: left;
+    color: black;
 
-#textblock .text-muted {
-  color: black; /* Black color for the muted footer text */
-  text-align: left; /* Left align muted text */
+    .row {
+      display: flex;
+      align-items: center;
+      margin: 0; // Reset any default row margins
+    }
+
+    .textblock-image {
+      padding: 0.25rem;
+      text-align: center;
+    }
+
+    .textblock-title {
+      text-align: left;
+      color: black;
+      margin-left: 0; // Ensure no indentation on the left side
+
+      strong {
+        font-weight: bold;
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .text-muted {
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
 }

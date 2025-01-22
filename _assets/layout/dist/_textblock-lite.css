@@ -1,42 +1,49 @@
-/* Styling for the textblock-lite-section */
-.textblock-lite {
-  /* Main container styling */
+/* Main section styling */
+.textblock-lite-section {
+  background-color: #f8f9fa;
+  background-image: url("/_assets/img/hero1.png");
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 60px 20px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
   /* Header styling */
   /* Grid layout */
-  /* Image styling inside grid */
-  /* Text styling inside grid */
   /* Button styling */
-  /* Button hover effect */
-  /* Main section styling */
   /* Icon styling */
   /* Section heading styling */
   /* Section subheading styling */
   /* Responsive Styles */
 }
-.textblock-lite .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.textblock-lite .header {
+.textblock-lite-section .header {
   text-align: center;
   margin-bottom: 20px;
 }
-.textblock-lite .grid-container {
+.textblock-lite-section .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
 }
-.textblock-lite .grid-item.image img {
+.textblock-lite-section .grid-container .grid-item.image img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
-.textblock-lite .grid-item.text {
+.textblock-lite-section .grid-container .grid-item.text {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
-.textblock-lite .btn {
+.textblock-lite-section .grid-container .grid-item.text p, .textblock-lite-section .grid-container .grid-item.text ul {
+  margin-bottom: 1rem;
+}
+.textblock-lite-section .grid-container .grid-item.text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.textblock-lite-section .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -49,27 +56,17 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.textblock-lite .btn:hover {
+.textblock-lite-section .btn:hover {
   background-color: #8AC5E2;
 }
-.textblock-lite .textblock-lite-section {
-  background-color: #f8f9fa;
-  background-image: url("/_assets/img/hero1.png");
-  background-repeat: repeat;
-  background-position: center center;
-  padding: 60px 20px;
-  margin: 0 auto;
-  position: relative;
-  max-width: 1200px;
-}
-.textblock-lite .textblock-lite-icon {
+.textblock-lite-section .textblock-lite-icon {
   position: absolute;
   top: 40px;
   right: 40px;
   z-index: 999;
   max-height: 20px;
 }
-.textblock-lite .section-heading {
+.textblock-lite-section .section-heading {
   font-size: 2.5rem;
   font-weight: 700;
   color: #333;
@@ -78,27 +75,30 @@
   z-index: 2;
   text-align: left;
 }
-.textblock-lite .section-subheading {
+.textblock-lite-section .section-subheading {
   font-size: 1.25rem;
   color: #00ACC8;
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
 }
+@media (max-width: 1024px) {
+  .textblock-lite-section .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 768px) {
-  .textblock-lite {
+  .textblock-lite-section {
+    padding: 40px 20px;
     /* Body section inside textblock-lite */
   }
-  .textblock-lite .textblock-lite-section {
-    padding: 40px 20px;
-  }
-  .textblock-lite .section-heading {
+  .textblock-lite-section .section-heading {
     font-size: 2rem;
   }
-  .textblock-lite .section-subheading {
+  .textblock-lite-section .section-subheading {
     font-size: 1.1rem;
   }
-  .textblock-lite .textblock-lite-section .textblock-lite-body {
+  .textblock-lite-section .textblock-lite-body {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;

@@ -1,29 +1,37 @@
+<!-- SCARF -->
+<section class="textblock-lite-section py-5" id="{{ site.data.sitetext.team.section | default: 'textblock-lite' }}">
 
-<div class="textblock-lite">
+    <div class="textblock-lite">
 
-  <div class="container">
-    <div class="header">
-        <h1>SCARF ASSESSMENT</h1>
-        <p>You are accessing the English Language version of the SCARF® Assessment.</p>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item image">
-            <img src="assets/img/scarf-assessment.png" alt="SCARF Assessment Image" style="max-width: 100%; height: auto;">
+        <!-- Correct container structure -->
+        <div class="container">
+            <h1>SCARF ASSESSMENT</h1>
+            <p>You are accessing the English Language version of the SCARF® Assessment.</p>
+            
+            <!-- Row for responsive columns -->
+            <div class="row">
+                <!-- Image column -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="p-3">
+                        <img src="assets/img/scarf-assessment.png" alt="SCARF Assessment Image" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <!-- Text content column -->
+                <div class="col-12 col-md-6 col-lg-8 mb-4">
+                    <p>Welcome to the SCARF® Assessment, a short, multiple-choice survey.</p>
+                    <p>This assessment will give you a better understanding of your relative sensitivity towards different types of social drivers in each domain of SCARF®.</p>
+                    <p>Knowing your strongest SCARF® drivers can help you:</p>
+                    <ul>
+                        <li>Understand how your role and work environment impact your current engagement</li>
+                        <li>Better regulate your emotions</li>
+                        <li>Better communicate your needs to others</li>
+                        <li>Make choices more suited to your own preferences</li>
+                    </ul>
+                    <p>Remember, there are no right or wrong answers. Once you click the button below, you can begin the assessment. Your results will appear on screen after submission, and you can print or email a copy for your records.</p>
+                    <button class="btn" onclick="window.location.href='https://example.com/scarf-assessment';">Take the SCARF Assessment</button>
+                </div>
+            </div>
         </div>
-        <div class="grid-item text">
-            <p>Welcome to the SCARF® Assessment, a short, multiple-choice survey.</p>
-            <p>This assessment will give you a better understanding of your relative sensitivity towards different types of social drivers in each domain of SCARF®.</p>
-            <p>Knowing your strongest SCARF® drivers can help you:</p>
-            <ul>
-                <li>Understand how your role and work environment impact your current engagement</li>
-                <li>Better regulate your emotions</li>
-                <li>Better communicate your needs to others</li>
-                <li>Make choices more suited to your own preferences</li>
-            </ul>
-            <p>Remember, there are no right or wrong answers. Once you click the button below, you can begin the assessment. Your results will appear on screen after submission, and you can print or email a copy for your records.</p>
-            <button class="btn" onclick="window.location.href='https://example.com/scarf-assessment';">Take the SCARF Assessment</button>
-        </div>
     </div>
-  </div>
-</div>
 
+</section>

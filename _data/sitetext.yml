@@ -84,22 +84,20 @@ textblock:
       - title: "Leadership and Resilience Coaching"
         description: "Working one-on-one or in focused groups to help individuals to develop their leadership skills, enhance their performance and work more effectively as a part of their teams."
         image: "fas fa-circle"
-      
       - title: "Facilitated Learning"
         description: "Engaging with leadership groups to help them build interpersonal skills and techniques to enhance team cohesion and effectiveness."
         image: "fas fa-circle"
-
       - title: "People Development Strategy"
         description: "Collaborating with leadership to put programs and processes in place that support corporate culture, talent development, and succession planning."
         image: "fas fa-circle"
-
+      - title: "Keynote Talks"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        image: "fas fa-circle"
       - title: "A Hero's Story"
         description: "Providing a space for inspiring individuals to share their stories of personal achievement or overcoming adversity to help motivate teams."
         image: "fas fa-circle"
 
-      - title: "Keynote Talks"
-        description: "Sharing learnings from the global South as a means to inspire and catalyse change with international audiences."
-        image: "fas fa-circle"
+
         
 
 
@@ -134,7 +132,7 @@ about:
 
 clients:
     title: Our Partners
-    title2: '& Clients'
+    title2: 
     text: ""
     section: clients
     max-height: 120px
@@ -176,7 +174,7 @@ clients:
         logo: assets/img/clients/Mr-Price-Group-Logo.png
     
 team:
-  title: "Meet the Team"
+  title: "Meet the Coaches"
   text: "Our team is composed of experts in various fields, each bringing a wealth of experience."
   contact: ""
   people:

@@ -1,5 +1,49 @@
-.textblock-heading {
-  margin: 5px 0;
-  text-transform: none;
-  color: cadetblue;
+.textblock-section {
+  background-color: #8AC5E2;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.textblock-section .section-heading {
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+.textblock-section .textblock .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.textblock-section .textblock-subheading {
+  color: black;
+  text-align: left;
+}
+.textblock-section .textblock-heading {
+  text-align: left;
+  color: black;
+}
+.textblock-section .textblock-heading .row {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.textblock-section .textblock-heading .textblock-image {
+  padding: 0.25rem;
+  text-align: center;
+}
+.textblock-section .textblock-heading .textblock-title {
+  text-align: left;
+  color: black;
+  margin-left: 0;
+}
+.textblock-section .textblock-heading .textblock-title strong {
+  font-weight: bold;
+}
+.textblock-section .textblock-heading .textblock-title p {
+  margin-top: 0.5rem;
+}
+.textblock-section .text-muted {
+  color: black;
+  text-align: center;
+  width: 100%;
 }
