@@ -11,11 +11,11 @@
 
 			
 			{% if site.data.sitetext.team.text %}
-			  <h3 class="section-subheading text-muted">{{ site.data.sitetext.team.text }}</h3>
+			  <h3 class="section-subheading text-primary">{{ site.data.sitetext.team.text }}</h3>
 			{% endif %}
 		  </div>
 		</div>
-		<div class="team-members">
+		<div class="team-members text-dark">
 		  {% for person in site.data.sitetext.team.people %}
 			<div class="team-member mb-4 d-flex flex-column flex-md-row align-items-start">
 			  <!-- Left Column: Image -->
@@ -27,7 +27,7 @@
 			  </div>
   
 			  <!-- Right Column: Text -->
-			  <div class="team-details">
+			  <div class="team-details text-dark">
 				<h4>{{ person.name }}</h4>
 				<p>{{ person.role }}</p>
   

@@ -31,7 +31,7 @@
 }
 
 #mainNav .navbar-brand > img {
-  height: 50px;
+  height: 70px;
 }
 
 #mainNav .navbar-nav {
@@ -40,7 +40,7 @@
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 16px;
+  font-size: 18px;
   /* Adjusting font size of menu options */
   font-weight: bold;
   padding: 1em 1em;

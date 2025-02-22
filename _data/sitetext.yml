@@ -91,7 +91,7 @@ textblock:
         description: "Collaborating with leadership to put programs and processes in place that support corporate culture, talent development, and succession planning."
         image: "fas fa-circle"
       - title: "Keynote Talks"
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description: "Sharing insights from the Global South to inspire and drive meaningful change among international audiences."
         image: "fas fa-circle"
       - title: "A Hero's Story"
         description: "Providing a space for inspiring individuals to share their stories of personal achievement or overcoming adversity to help motivate teams."
@@ -175,7 +175,7 @@ clients:
     
 team:
   title: "Meet the Coaches"
-  text: "Our team is composed of experts in various fields, each bringing a wealth of experience."
+  text: "Unlocking leadership potential requires the right coach – someone who not only possesses the skills but also aligns with your unique leadership style and personality. I've curated a cohort of Southern Africa's top coaches – passionate, skilled professionals who prioritize client growth. Let's connect you with the ideal coach to elevate your leadership and team performance through a powerful coaching chemistry."
   contact: ""
   people:
       - name: "Craig Stuart"
@@ -313,6 +313,10 @@ testimonials:
     - name: "Travis Gale"
       company: "Appletree"
       testimony: "We are privileged to partner with Craig in the coaching arena at Appletree. He is passionate about what he does which is highly infectious and inspirational to the rest of our team. He brings wisdom to all our conversations given his personal and corporate experience. Lastly, he has the integrity which means that we and all the clients he has interacted with on our behalf, have benefited from the safe space he creates."
+
+    - name: "Anton Clarke"
+      company: "IOEC"
+      testimony: "Craig understands the nuanced and important balance between equipping a team with tools to better cope with their stressful lives and keeping a high-performance mindset.He approaches each situation with compassion and a will to win, using an approach which is authentic and remarkably ego-free.  This encourages vulnerability and develops trustful and meaningful bonds within leadership teams.Craig will add value to any team looking to improve themselves individually and collectively."
     
     - name: "Gerrie Noel"
       company: "Michaelhouse"
@@ -347,10 +351,15 @@ testimonials:
       testimony: "Craig’s coaching sessions from the start have been a great learning curve for me. They have helped me grow as a person not only in my personal life, but in my professional workplace as well. Craig has given me the confidence and tools to open up and have tough discussions with co-workers."
     
     - name: "Austen Johnston"
-      company: "Acme Company"
-      testimony: "The coaching sessions are very professional. They were very well-paced, and Craig respects my time and knows how to accommodate me in cases where the schedule cannot be kept. The one-hour sessions are just enough time to cover good ground without feeling like there’s too little time to tackle a topic."
+      company: "Time and Tide"
+      testimony: "Your coaching, guidance and advice has not only been helpful, but reflective of my growth, personally and professionally, in the last year. I don’t naturally gravitate towards sharing, being open or expressive. I internalise – which is not always the best way to live life! I’ve had several opportunities to engage leadership coaches in my career and you are the first that I’ve ‘retained’/maintained and continued my journey with. That says a lot. 
+      I have a better understanding of what is happening in my life, and I can make better decisions. I’m in a very reflective space and this has invaluable to focus on important things in life. 
+      Whilst I acknowledge the relationship/connection/stickiness between coach and client/student? is highly subjective – your style may not be for everyone – but it works for me. Whatever you’re doing, thank you very much. "
 
-      
+    - name: "Justin Sandler"
+      company: "Kaomi Marketing"
+      testimony: "The journey I have been on with you has been life changing.  I've engaged with your coaching for over 2 years now, and I've changed dramatically, you’ve really helped me find a space I feel safe to express and talk out my issues, where you've given extremely helpful guidance and coaching lessons and principles to take with. I've found incremental improvement in my personal, work and mental health on this journey with you."
+
 contact:
     title: "Contact Apex Leadership Specialists"
     text: "Ready to take the next step in your leadership journey?"

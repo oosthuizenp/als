@@ -1,16 +1,17 @@
 // Font Mixins
 @mixin serif-font {
-  font-family: 'Poppins', serif;
+  font-family: 'Barlow', serif;
 }
 
 @mixin script-font {
-  font-family: 'Poppins', serif; /* Or you can specify a script font if desired */
+  font-family: 'Barlow', serif; /* Or you can specify a script font if desired */
 }
 
 @mixin body-font {
-  font-family: 'Poppins', serif;
+  font-family: 'Barlow', serif;
 }
 
 @mixin heading-font {
-  font-family: 'Poppins', serif; /* You can omit the fallback for Bebas Neue */
+  font-family: 'Barlow', cursive, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;  // Example of bold, adjust as needed
 }
