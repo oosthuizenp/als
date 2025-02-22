@@ -1,13 +1,13 @@
 <!-- Text-Block |  What We Do-->
+
 <section class="textblock-section" id="{{ site.data.sitetext.textblock.section | default: 'textblock' }}">
   <div class="container">
+    <!-- Header -->
     <div class="row">
       <div class="col-lg-12">
-        <!-- MAIN TITLE -->
-        <h1 class="section-heading">
+        <h1 class="section-heading ">
           {{ site.data.sitetext.textblock.title | default: 'Text Text-Block' }}
         </h1>
-        <!-- BULLET HEADINGS -->
         {% if site.data.sitetext.textblock.text %}
         <h3 class="textblock-subheading">
           {{ site.data.sitetext.textblock.text }}
@@ -16,27 +16,28 @@
       </div>
     </div>
 
+    <!-- Content -->
     <div class="row">
       <div class="col-lg-12">
-        <div class="container textblock-heading">
+        <div class="textblock-container">
           {% for textblock in site.data.sitetext.textblock.list %}
-          <div class="row">
+          <div class="textblock-item large">
             {% if textblock.image %}
-            <div class="textblock-image col-1 text-top">
-              <i class="fas {{textblock.image}} fa-1x"></i>
+            <div class="textblock-icon">
+              <i class="fas {{textblock.image}}"></i>
             </div>
             {% endif %}
-            <div class="textblock-title col align-items-center">
+            <div class="textblock-content large">
               <strong>{{ textblock.title }}</strong>
               {% if textblock.description %}
-                <p>{{ textblock.description }}</p>
+              <p>{{ textblock.description }}</p>
               {% endif %}
             </div>
           </div>
           {% endfor %}
         </div>
         {% if site.data.sitetext.textblock.footer %}
-        <div class="text-muted">
+        <div class="large">
           {{ site.data.sitetext.textblock.footer | markdownify }}
         </div>
         {% endif %}
@@ -44,4 +45,3 @@
     </div>
   </div>
 </section>
-<!-- End Text-Block -->

@@ -1,11 +1,11 @@
 nav:
-  - title: "About Us"
+  - title: "About"
     section: about
     
   - title: "Services"
     section: textblock
 
-  - title: "The Team"
+  - title: "Coaches"
     section: team
 
   - title: "Partners"
@@ -13,3 +13,6 @@ nav:
   
   - title: "Testimonials"
     section: testimonials
+
+  - title: "Contact"
+    url: contact 

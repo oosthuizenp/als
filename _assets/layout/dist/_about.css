@@ -1,42 +1,48 @@
-/* Ensure the background color is applied only to the Text-Block section */
 .about-section {
-  background-color: #8AC5E2;
-  /* Background color for the Text-Block section only */
-  padding-top: 3rem;
-  /* Add space above */
-  padding-bottom: 3rem;
-  /* Add space below */
+  background-color: #fff;
+  padding: 4rem 2rem;
+  isolation: isolate;
+  /* Modern: Prevents stacking context issues */
 }
 
-/* Heading styles for consistency with the "About Us" section */
 .about-section .section-heading {
-  font-size: 3rem;
-  /* Main heading font size */
-  color: #235FA3;
-  /* Title color */
-  text-align: left;
-  /* Left align */
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  font-size: clamp(2rem, 8vw, 5rem);
+  color: #235fa3;
   text-transform: uppercase;
-  /* Uppercase heading */
-  margin-left: 0;
-  /* Remove left margin */
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-/* Style h1 specifically for this section */
-/* Large text styles */
+/* If the container is causing centering issues, also add: */
+.about-section .container {
+  text-align: justify !important;
+  display: block;
+}
+
 .about-section .large {
+  font-size: 1.25rem;
+  line-height: 1.8;
   text-align: left;
-  /* Left align large text */
-  text-justify: inter-word;
-  /* Justify large text */
-  color: black;
-  /* Ensure text color is black */
+  color: #333;
+  max-width: 900px;
+  margin-bottom: 2rem;
 }
 
-/* Muted text styles */
-.about-section .text-muted {
-  color: black;
-  /* Black color for the muted footer text */
-  text-align: left;
-  /* Left align muted text */
+/* Removed .text-muted since it wasn't in the HTML */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-heading {
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
+  }
+
+  .large {
+    font-size: 1rem;
+  }
 }

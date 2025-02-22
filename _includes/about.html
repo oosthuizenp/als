@@ -1,23 +1,13 @@
-
-<section class="about-section py-5" id="{{ site.data.sitetext.about.section | default: 'about' }}">
-
+<section class="about-section" id="{{ site.data.sitetext.about.section | default: 'about' }}">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <!-- MAIN TITLE -->
-        <h1 class="section-heading">
-          {{ site.data.sitetext.about.title | default: 'Who We Are.' }}
-        </h1>
-      </div>
+    
+    <h1 class="section-heading">
+      {{ site.data.sitetext.about.title | default: 'Who We Are' }}
+    </h1>
+    
+    <div class="large">
+      {{ site.data.sitetext.about.text2 | markdownify }}
     </div>
-
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
-        <div class="large">
-          {{ site.data.sitetext.about.text2 | markdownify }}
-        </div>
-      </div>
-    </div>
+    
   </div>
 </section>
-<!-- End About -->

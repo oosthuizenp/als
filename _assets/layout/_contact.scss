@@ -1,5 +1,5 @@
 /* Styling for the contact section */
-section#contact {
+.contact-section {
   background: url("#{$contact-image}") center/cover no-repeat $gray-900;
   .section-heading {
     text-align: left; /* Left align */
@@ -79,7 +79,7 @@ section#contact {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   text-align: left;
   flex-wrap: wrap;

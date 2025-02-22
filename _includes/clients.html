@@ -1,11 +1,10 @@
 <!-- ======= Clients Section ======= -->
-<section id="clients" class="clients py-5">
+<section class="clients-section py-5" id="{{ site.data.sitetext.clients.section | default: 'clients' }}">
   <div class="container">
     <h2 class="heading">{{ site.data.sitetext.clients.title | default: "I Have Worked With" }}</h2>
     <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-      
-      {% for client in site.data.sitetext.clients.list %}
-        <div class="col-lg-3 col-md-4 col-6">
+      {% for client in site.data.sitetext.clients.list limit:9 %}
+        <div class="col-lg-4 col-md-4 col-4">
           <div class="client-logo">
             <a href="{{ client.url }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ client.logo }}" class="img-fluid" alt="{{ client.title }}">
@@ -13,7 +12,6 @@
           </div>
         </div>
       {% endfor %}
-      
     </div>
   </div>
 </section>

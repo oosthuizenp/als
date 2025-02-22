@@ -1,0 +1,18 @@
+.two-block-section {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    isolation: isolate;
+    /* Modern: Prevents stacking context issues */
+  }
+  
+  .two-block-section .section-heading {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    font-size: clamp(2rem, 8vw, 5rem);
+    color: #235fa3;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
