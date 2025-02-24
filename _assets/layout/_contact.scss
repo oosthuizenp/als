@@ -1,126 +1,97 @@
+
+$white: #ffffff; // You can replace this with any color you prefer
+
 /* Styling for the contact section */
 .contact-section {
-  background: url("#{$contact-image}") center/cover no-repeat $gray-900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .section-heading {
-    text-align: left; /* Left align */
-    color: $white;
-    margin-bottom: 0.618em; /* Golden ratio */
+    text-align: center;
+    font-size: clamp(2rem, 8vw, 5rem);
+    color: #9DCEE7;
+    text-transform: uppercase;
+    font-weight: 700;
+    //margin-bottom: 1rem;
   }
+
   .section-subheading {
-    color: $white;
+    color: #4A5454;
     margin-top: 0.618em; /* Golden ratio */
+    font-size: 1.25rem;
   }
+
   .form-group {
     margin-bottom: 25px;
+
     input, textarea {
       padding: 20px;
+      font-size: 1rem;
+      
       &.form-control {
-        height: auto;
+        width: 100%;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+        
         &::placeholder {
           font-weight: 700;
           color: $gray-400;
           @include heading-font;
         }
       }
+
       &.form-control.textarea {
         height: 248px;
       }
+
+      .form-control:focus {
+        border-color: $primary;
+        box-shadow: none;
+      }
     }
-    .form-control:focus {
-      border-color: $primary;
-      box-shadow: none;
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
+    background-color: $primary;
+    color: $white;
+    font-size: 1.1rem;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary, 10%);
     }
   }
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  /* Adjusted line spacing for smaller screens */
-  section#contact .section-heading {
+  .section-heading {
     margin-bottom: 0.5em;
-    text-align: left; /* Left align */
+    text-align: left;
+    font-size: 2rem;
   }
 
-  section#contact .section-subheading {
+  .section-subheading {
     margin-top: 0.5em;
   }
 
-  section#contact .form-group {
+  .form-group {
     margin-bottom: 15px;
+
     input, textarea {
       padding: 15px;
     }
+
     .form-control.textarea {
       height: 200px;
     }
-  }
-}
-
-.block.left .icon,
-.block.left .text {
-  display: inline-block;
-  vertical-align: top;
-    padding: 3px 3px;
-}
-
-.icon {
-  padding: 3px;
-}
-
-.icon img {
-  height: 45px;
-  width: auto;
-}
-
-.contact-text {
-  font-size: 17px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  flex-wrap: wrap;
-}
-
-.block {
-  flex: 1;
-  padding: 20px;
-  text-align: left;
-}
-
-.block.left {
-  display: flex;
-  flex-direction: row; /* Ensure items are aligned horizontally */
-  align-items: baseline; /* Align items based on their baselines */
-  justify-content: center; /* Align items horizontally */
-  text-align: left;
-}
-
-.block.left .icon {
-  margin-right: 8px;
-}
-
-.block.left .text {
-  text-align: center;
-}
-
-.block.left .text a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-}
-
-.block.left ul li {
-  display: flex;
-  align-items: center;
-  justify-content: left; /* Align items horizontally */
-}
-
-@media (max-width: 768px) {
-  .block {
-    width: 100%;
   }
 }

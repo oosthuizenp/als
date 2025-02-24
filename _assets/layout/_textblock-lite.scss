@@ -1,15 +1,18 @@
 /* Main section styling */
 .textblock-lite-section {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   padding: 60px 20px;
   margin: 0 auto;
   position: relative;
   max-width: 900px;
 
-  /* Header styling */
-  .header {
+  .section-heading {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: clamp(2rem, 8vw, 5rem);
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 
   /* Grid layout */

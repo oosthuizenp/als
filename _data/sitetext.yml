@@ -100,17 +100,21 @@ textblock:
 
         
 
-
 textblock-lite:
-    title: "Ready to transform your home ownership journey?"
-    text: "Get in touch now to unlock quotes from our partner banks with just one application!
-            <br><br>
-            Whether it's pre-approvals, refinancing, or new home loans, let's make your dream home a reality. Contact us today!"
-    footer: ""
-    section: textblock-lite
-    list:
-      - title: ""
-        image: ""
+    title: "SCARF ASSESSMENT"
+    description: "You are accessing the English Language version of the SCARF\u00ae Assessment."
+    image: "assets/img/scarf-assessment.png"
+    welcome_text: "Welcome to the SCARF\u00ae Assessment, a short, multiple-choice survey."
+    details: "This assessment will give you a better understanding of your relative sensitivity towards different types of social drivers in each domain of SCARF\u00ae."
+    benefits:
+      - "Understand how your role and work environment impact your current engagement"
+      - "Better regulate your emotions"
+      - "Better communicate your needs to others"
+      - "Make choices more suited to your own preferences"
+    instructions: "Remember, there are no right or wrong answers. Once you click the button below, you can begin the assessment. Your results will appear on screen after submission, and you can print or email a copy for your records."
+    button_text: "Scarf Assessment"
+    button_link: "/contact"
+
 
 
 
@@ -367,10 +371,10 @@ testimonials:
       testimony: "The journey I have been on with you has been life changing.  I've engaged with your coaching for over 2 years now, and I've changed dramatically, you’ve really helped me find a space I feel safe to express and talk out my issues, where you've given extremely helpful guidance and coaching lessons and principles to take with. I've found incremental improvement in my personal, work and mental health on this journey with you."
 
 contact:
-    title: "Contact Apex Leadership Specialists"
+    title: "Contact Us"
     text: "Ready to take the next step in your leadership journey?"
-    section: team
-    
+    section: contact
+
 footer:
     legal: "Powered by Intellify"
     social:
