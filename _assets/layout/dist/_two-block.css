@@ -2,7 +2,7 @@
   background-color: #fff;
   padding: 4rem 2rem;
   isolation: isolate;
-  /* Modern: Prevents stacking context issues */
+  /* Prevents stacking context issues */
 }
 
 .two-block-section .section-heading {
@@ -14,4 +14,20 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.two-block-section .two-block-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.two-block-section .two-block-card img {
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
 }

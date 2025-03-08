@@ -15,4 +15,4 @@ nav:
     section: testimonials
 
   - title: "Contact"
-    section: contact 
+    url: /contact 
